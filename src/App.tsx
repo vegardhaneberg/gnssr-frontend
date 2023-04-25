@@ -1,12 +1,14 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import MapComponent from "./components/MapComponent/MapComponent";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <h1>Hello world</h1>
-  )
+    <div className="container">
+      <h1>GNSSR TOOLBOX</h1>
+      <MapComponent />
+    </div>
+  );
 }
 
-export default App
+export default App;
